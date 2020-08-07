@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <a href="Videojuegos.html">
+        <center><img src="Game_Max.png" widht="70" height="70"></center></a>
+
+		<nav class="navegacion">
+			<ul class="menu">
+				<li><a href="Aventura.html">Aventura</a></li>
+				<li><a href="Shooter.html">Shooters</a></li>
+                <li><a href="Lucha.html">Lucha</a></li>
+                <li><a href="Terror.html">Survival horror</a></li>
+                <li><a href="Deportes.html">Deportivos</a></li>
+                <li><a href="Guerra.html">Guerra</a></li>
+			</ul>
+		</nav>
+    </header>
+    
+    <br>
+    <div class="contenedor-slideshow">
+
+        <div class="Carrusel fade">
+
+            <div class="numerotexto"></div>
+            <img src="Mario_Bros.png" style="width: 100%">
+            <div class="texto"></div>
+
+        </div>
+
+        <div class="Carrusel fade">
+            
+            <div class="numerotexto"></div>
+            <img src="Gears3.png" style="width: 100%">
+            <div class="texto"></div>
+
+        </div>
+
+        <div class="Carrusel fade">
+            
+            <div class="numerotexto"></div>
+            <img src="Cod.png" style="width: 100%">
+            <div class="texto"></div>
+
+        </div>
+
+        <div class="Carrusel fade">
+            
+            <div class="numerotexto"></div>
+            <img src="Fifa20.png" style="width: 100%">
+            <div class="texto"></div>
+
+        </div>
+
+        <br>
+        <font color="white" face="Times New Roman">
+            <h1 align="center"><i>¿Quienes Somos?</i></h1>
+            </font>
+        <br>
+        <font color="white" face="Comic Sans MS,arial"> Game Max, somos una comunidad que te trae la mejor información sobre los mejores videojuegos de las plataformas más populares, te traemos informacion sobre lo que trata cada genero de videojuego y una seccion tambien en la que hablamos sobres los juegos mejores valorados segun la comunidad.</font>
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+
+        <span class="punto"></span>
+        <span class="punto"></span>
+        <span class="punto"></span>
+        <span class="punto"></span>
+
+    </div>
+
+    <script>
+
+        var slideIndex = 0;
+        showSlides(slideIndex);
+        function plusSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("Carrusel");
+            var puntos = document.getElementsByClassName("punto");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            for (i = 0; i < puntos.length; i++) {
+                puntos[i].className = puntos[i].className.replace(" activo", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            puntos[slideIndex-1].className += " activo";
+            setTimeout(showSlides, 3000);
+        }
+
+    </script>
+
+        <footer>
+            <img src="Game_Max.png" width="200px"> <br>
+            Derechos Reservados &copy; 2020 <br>
+            Contactanos: gamemax690gmail.com <br>
+        </footer>
+</ul>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <a href="index.html">
+            <center><img src="Game_Max.png" widht="70" height="70"></center></a>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background: #333;
+            }
+            /* Encabezado con Estilo  */
+            .encabezado {
+                grid-area: header;
+                background-color: #333;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+            }
+            /* Contenedor del Grid */
+            .contenedor-grid {
+                display: grid;
+                grid-template-areas:
+                'header header header header header header'
+                'Left Left Left Left Left Left'
+                'footer footer footer footer footer footer';
+                /* grid-column-gap: 10px; - Si se desea tener espacio entre las columnas */
+            }
+            .izq,
+            .medio,
+            .derecha {
+                padding: 10px;
+                height: 300px;
+            }
+            /* Columna Izq con Estilo */
+            .izq {
+                grid-area: left;
+            }
+            /* Columna Enmedio */
+            .medio {
+                grid-area: middle;
+            }
+            /* Columna Derecha con Estilo */
+            .derecha {
+                grid-area: right;
+            }
+            /* Pie de Pagina con Estilo */
+            .pie-pag {
+                grid-area: footer;
+                background-color: #333;
+                padding: 10px;
+                text-align: center;
+            }
+            /* Diseno Responsivo: hace que las tres columnas se apilen una encima de la otra en lugar de una al lado de la otra  */
+            @media (max-width: 600px) {
+                .contenedor-grid {
+                    grid-template-areas: 
+                    'header header header header header header'
+                    'left left left left left left'
+                    'middle middle middle middle middle middle'
+                    'right right right right right right'
+                    'footer footer footer footer footer footer';
+                }
+            } 
+        </style>
+    </head>
+    <div>
+        <font color="white" size = "3" face="Arial"> 
+            <center><h2>Deportivo</h2></center>
+            <p align="justify" class="leftmargin">
+                Son videojuegos basados en el mundo del deporte recreando eventos de las diferentes disciplinas (Tenis, Fútbol, Baloncesto, Fútbol americano, Béisbol, Skate, Golf, etc.) tanto individuales como colectivas, donde se manejan los jugadores, donde el objetivo es siempre ganar. Existen algunas variantes estratégicas de estos juegos deportivos donde se adopta la perspectiva de un entrenador; el objetivo sigue siendo el mismo pero para lograrlo cobra importancia la pericia del jugador administrando los recursos de un equipo. Muchos videojuegos de deportes suelen tener revisiones anuales que incluyen pequeñas mejoras y la actualización de las plantillas de los equipos. Estas actualizaciones se suelen lanzarse al mercado en correspondencia con los videojuegos basados en eventos deportivos mundiales, para aprovechar comercialmente su popularidad.</p></font>
+        <div class="encabezado">
+            <font color="#378708" size = "5" face="Times New Roman"> 
+            <h3>Videojuegos Deportivos</h3>
+        </div>
+        <font color="black" size = "5" face="imes New Roman"> 
+        <center><div class="izq" style="background-color: #aaa;">FIFA 20<br><br>
+            <img src="FIFA2O.gif" onmouseover="this.width=500;this.height=400;" onmouseout="this.width=200;this.height=150;" width="200" height="200" align="left"/>
+                <p align="justify" class="leftmargin">
+                    FIFA 20 es un videojuego de simulación de fútbol desarrollado por EA Sports, como parte de la serie FIFA de Electronic Arts.
+                    El juego presenta VOLTA Football por primera vez, un nuevo modo que ofrece una variación en el juego tradicional de 11 contra 11 y se enfoca en juegos callejeros y de fútbol sala de lados pequeños. Se cree que el modo se centra en la antigua serie FIFA Street. En esta nueva versión del FIFA.</p></font>
+        </div></center>
+
+        <font color="black" size = "5" face="imes New Roman"> 
+            <center><div class="izq" style="background-color: #aaa;">Forza Horizon 4<br><br>
+                <img src="Forza Horizon.gif" onmouseover="this.width=500;this.height=400;" onmouseout="this.width=200;this.height=150;" width="200" height="200" align="left"/>
+                    <p align="justify" class="leftmargin">
+                        Forza Horizon 4 es la cuarta parte de la saga de conducción en mundo abierto de Microsoft y PlayGround Games. Trasladándonos a un enorme mapeado que recrea Reino Unido casi en su totalidad, la nueva entrega apuesta por incluir más coches, más eventos y competiciones, mejorar los gráficos y ofrecer un sistema de estaciones en tiempo real que nos ofrece la posibilidad de pilotar en verano, otoño, invierno y primavera.</p></font>
+            </div></center>
+
+            <font color="black" size = "5" face="imes New Roman"> 
+                <center><div class="izq" style="background-color: #aaa;">MADDEN NFL 20<br><br>
+                    <img src="NFL.gif" onmouseover="this.width=500;this.height=400;" onmouseout="this.width=200;this.height=150;" width="200" height="200" align="left"/>
+                        <p align="justify" class="leftmargin">
+                            Es un título que nos invita a tocar el firmamento como una nueva estrella de la NFL mientras que, al mismo tiempo, nos convida a conocer a los grandes referentes de este deporte. La inclusión de los nuevos X-Factors y las habilidades especiales de los jugadores en los distintos modos de juego, la pequeña gran transformación del modo franquicia y los ajustes del gameplay -más fluido y real que nunca-, suponen una gran carrera hacia la endzone de un buen puñado de yardas.</p></font>
+                </div></center>
+    </div>
+    </body>
+</html>

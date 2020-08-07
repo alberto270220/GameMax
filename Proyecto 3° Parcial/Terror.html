@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <a href="index.html">
+            <center><img src="Game_Max.png" widht="70" height="70"></center></a>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background: #333;
+            }
+            /* Encabezado con Estilo  */
+            .encabezado {
+                grid-area: header;
+                background-color: #333;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+            }
+            /* Contenedor del Grid */
+            .contenedor-grid {
+                display: grid;
+                grid-template-areas:
+                'header header header header header header'
+                'Left Left Left Left Left Left'
+                'footer footer footer footer footer footer';
+                /* grid-column-gap: 10px; - Si se desea tener espacio entre las columnas */
+            }
+            .izq,
+            .medio,
+            .derecha {
+                padding: 10px;
+                height: 300px;
+            }
+            /* Columna Izq con Estilo */
+            .izq {
+                grid-area: left;
+            }
+            /* Columna Enmedio */
+            .medio {
+                grid-area: middle;
+            }
+            /* Columna Derecha con Estilo */
+            .derecha {
+                grid-area: right;
+            }
+            /* Pie de Pagina con Estilo */
+            .pie-pag {
+                grid-area: footer;
+                background-color: #333;
+                padding: 10px;
+                text-align: center;
+            }
+            /* Diseno Responsivo: hace que las tres columnas se apilen una encima de la otra en lugar de una al lado de la otra  */
+            @media (max-width: 600px) {
+                .contenedor-grid {
+                    grid-template-areas: 
+                    'header header header header header header'
+                    'left left left left left left'
+                    'middle middle middle middle middle middle'
+                    'right right right right right right'
+                    'footer footer footer footer footer footer';
+                }
+            } 
+        </style>
+    </head>
+    <div>
+        <font color="white" size = "3" face="Arial"> 
+            <center><h2>Survival horror</h2></center>
+            <p align="justify" class="leftmargin">
+                Correspondientes al género de terror. El/los protagonistas viven aventuras dónde deben salir airosos de situaciones típicas de una película de terror, centrándose su objetivo principal en escapar de una casa llena de zombis, huir de un asesino, resolver misterios para aplacar a los fantasmas, etc.
+                Un factor importante es el terror psicológico, ayudado de una buena ambientación y apartado sonoro que incorpora en el juego sonidos chirriantes de una puerta o gemidos de posibles víctimas, así como el tránsito por pasillos oscuros y tenebrosos con escenas de espanto; que en diversas ocasiones causan miedo o angustia en el videojugador hasta poner sus nervios de punta.</p></font>
+        <div class="encabezado">
+            <font color="#378708" size = "5" face="Times New Roman"> 
+            <h3>Top 3 Juegos De Terror</h3>
+        </div>
+        <font color="black" size = "5" face="imes New Roman"> 
+        <center><div class="izq" style="background-color: #aaa;">Outlast<br><br>
+            <img src="Outlast.gif" onmouseover="this.width=500;this.height=400;" onmouseout="this.width=200;this.height=150;" width="200" height="200" align="left"/>
+                <p align="justify" class="leftmargin">
+                    Es un videojuego de Horror de supervivencia en primera persona desarrollado y publicado por Red Barrels, se trata de una aventura de terror en primera persona ambientada en el manicomio Mount Massive, ubicado en las remotas montañas de Colorado (Estados Unidos).
+                    En Outlast encarnamos a Miles Upshur, un periodista que se acerca al lugar para investigarlo. En sus instalaciones, irá descubriendo una oscura historia que mezcla ciencia y religión a partes iguales.​</p></font>
+        </div></center>
+
+        <font color="black" size = "5" face="imes New Roman"> 
+            <center><div class="izq" style="background-color: #aaa;">Dead Space<br><br>
+                <img src="Dead_Spacegif.gif" onmouseover="this.width=500;this.height=400;" onmouseout="this.width=200;this.height=150;" width="200" height="200" align="left"/>
+                    <p align="justify" class="leftmargin">
+                        La historia se desarrolla en el interior de la extractora espacial USG Ishimura. La tripulación ha sido masacrada por «necromorfos», monstruos creados por una forma de vida alienígena. El protagonista, Isaac Clarke, tiene que enfrentarse a los «necromorfos» en solitario. 
+                        El objetivo de la mayoría de las misiones es recorrer las cubiertas del Ishimura para recoger elementos y llevarlos a ciertos puntos según las indicaciones que otros personajes secundarios dan a Clarke a través de su enlace de radio. Durante estos recorridos los enemigos nos atacan de formas inesperadas y en grupos cada vez más numerosos.</p></font>
+            </div></center>
+
+            <font color="black" size = "5" face="imes New Roman"> 
+                <center><div class="izq" style="background-color: #aaa;">Alien Isolation<br><br>
+                    <img src="Alien_Insolation.gif" onmouseover="this.width=500;this.height=400;" onmouseout="this.width=200;this.height=150;" width="200" height="200" align="left"/>
+                        <p align="justify" class="leftmargin">
+                            Es básicamente un juego de infiltración y sigilo con elementos de survival horror, un pequeño sistema de fabricación de objetos y cantidad de eventos que guían al jugador a través de la historia. 
+                            A lo largo del accidentado y tenso viaje el jugador tendrá que moverse entre instalaciones abandonadas, opresivos pasillos y estancias a rebosar de cadáveres para cumplir los objetivos de la misión y evitar ser detectado.</p></font>
+                </div></center>
+    </div>
+    </body>
+</html>

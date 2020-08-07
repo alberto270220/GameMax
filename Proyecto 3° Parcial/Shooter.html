@@ -1,0 +1,113 @@
+<HTML>
+    <HEAD>
+    <TITLE> Aventura </TITLE>
+    <style type="text/css">
+    p.rightmargin {margin-right:75%}
+
+    .acordeon{
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+        .activo, .acordeon:hover{
+            background-color: #378708;
+        }
+        .panel{
+            padding: 0 18px;
+            display: none;
+            background-color: #333;
+            overflow: hidden;
+        }
+    </style>
+    </HEAD> 
+    <a href="index.html">
+        <center><img src="Game_Max.png" widht="70" height="70"></center></a>
+    <center> <div class="n"><p><b><font color="#378708" face="georgia" size="4"><marquee width="1270" scrollamount="10" bgcolor="black">Videojuegos de Disparos</marquee>    </font></b></p><center>
+    
+    <body>
+    <body bgcolor="#333">
+    <body link="#006400>">
+    <body vlink="#d268b4">
+    <body alink="#d2691E">
+    </body>
+    <font color="FFFFFF" size = "5" face="impact"> 
+    <script language="JavaScript">  var estado=true;  setTimeout("ver()",450);  function ver (){  estado=!estado;  if(estado==true)  texto1.style.visibility="visible";  else  texto1.style.visibility="hidden";  setTimeout("ver()",450);  }  
+    </script><p align="justify" id="texto1"  style="visibility:visible"><font face="Arial, Helvetica,  sans-serif size="3">SHOOTERS</p></font>
+    <FONT COLOR="black" SIZE = "5" FACE="arial">
+    
+    <p><img src="7.png" onmouseover="this.width=500;this.height=400;" onmouseout="this.width=200;this.height=150;" width="200" height="100" align="right"/>
+    <font color="FFFFFF" size = "5" face="Arial"> 
+    <p align="justify" class="leftmargin">
+        Son conocidos también como “juegos shooters” estos según la temática y desarrollo pueden clasificarse en diferentes subgéneros como disparos en primera persona, disparos en tercera persona, disparos en primera persona multijugador masivo en línea, acción táctica, videojuegos de disparos de desplazamiento lateral, mata marcianos y videojuegos de pistola.</p></font>
+
+    <img src="Clases-Destiny-87753.gif" onmouseover="this.width=500;this.height=400;" onmouseout="this.width=200;this.height=150;" width="200" height="100" align="right"/>
+        <font color="FFFFFF" size = "5" face="Arial"> 
+            <br>
+            <br>
+
+    <font color="FFFFFF" size = "5" face="impact"> 
+        <script language="JavaScript">  var estado=true;  setTimeout("ver()",450);  function ver (){  estado=!estado;  if(estado==true)  texto1.style.visibility="visible";  else  texto1.style.visibility="hidden";  setTimeout("ver()",450);  }  
+        </script><p align="justify" id="texto1"  style="visibility:visible"><font face="Arial, Helvetica,  sans-serif size="3">Caracteristicas de los shooters</p></font>
+        <FONT COLOR="black" SIZE = "5" FACE="arial">
+
+    <button class="acordeon">Perspectiva</button>
+    <div class="panel">
+        <font color="white" size = "3" face="Arial"> 
+         <p align="justify" class="leftmargin">
+        El jugador puede ver disparos en primera persona o desde una cámara que sigue al personaje por la espalda desde una cierta distancia y elevación. También es posible encontrar juegos que disponen de una cámara fija.</p></font>
+    </div>
+
+    <button class="acordeon">Realismo</button>
+    <div class="panel">
+        <font color="white" size = "3" face="Arial"> 
+            <p align="justify" class="leftmargin">
+                Los juegos que hacen uso de elementos “realistas”, como pueden ser armas que existen en la realidad, o la simulación del daño del personaje, se suelen llamar shooters tácticos. Aquellos que permiten más libertad respecto a escenarios, objetos, o la física del juego son conocidos como shooters arcade. No hay una clara distinción entre ambos tipos, estando la mayoría de los shooters en un abanico entre ambos.</p>
+    </div>
+    
+    <button class="acordeon">Numero de personajes</button>
+    <div class="panel">
+        <font color="white" size = "3" face="Arial"> 
+            <p align="justify" class="leftmargin">
+                Mientras que la mayoría de los shooters se juegan con un solo personaje, algunos ofrecen la oportunidad de controlar un grupo de personajes; generalmente manejando a uno y dando órdenes a los demás. Los juegos en los que aparece un grupo de personajes ayudando al principal, pero que no son manejables, no se consideran juegos en grupo.
+            </p>
+    </div>
+
+    <button class="acordeon">Multijugador</button>
+    <div class="panel">
+        <font color="white" size = "3" face="Arial"> 
+            <p align="justify" class="leftmargin">
+                Esta es la característica principal (en los últimos tiempos) que hacen de este tipo de juegos más populares. Si el shooter hace uso de internet, se puede catalogar en una serie de divisiones: Los juegos en equipo son aquellos en los que cada jugador es asignado a un equipo entre varios (2 o más) para conseguir un objetivo. Para ello, los jugadores participan en el mismo equipo pero cada uno tiene su puntuación. Los juegos cooperativos tienen a numerosos jugadores jugando en compañía para conseguir unos objetivos y puntuación conjuntos. En los juegos individuales todos los jugadores compiten contra todos. Algunos juegos permiten elegir el modo de juego al que se desea jugar entre estos tres tipos.</p>
+    </div>
+
+    <button class="acordeon">Tematica</button>
+    <div class="panel">
+        <font color="white" size = "3" face="Arial"> 
+            <p align="justify" class="leftmargin">
+                Es una manera opcional de clasificar un shooter, pero en ocasiones es necesaria para distinguirlo. Un shooter puede estar enfocado a la infiltración en lugar de la acción. Otros pueden tener elementos de terror.</p>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("acordeon");
+        var i;
+
+        for (i = 0; i < acc.length; i++){
+            acc[i].addEventListener("click",function(){
+                this.classList.toggle("activo");
+                var panel =this.nextElementSibling;
+                if (panel.style.display === "block"){
+                    panel.style.display = "none";
+                }else{
+                    panel.style.display="block";
+                } 
+            });
+        }
+    </script>
+    </Body>
+    </HTML>

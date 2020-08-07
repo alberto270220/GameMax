@@ -1,0 +1,93 @@
+<HTML>
+    <HEAD>
+    <TITLE> Aventura </TITLE>
+    <style type="text/css">
+    p.rightmargin {margin-right:75%}
+
+    .acordeon{
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+        .activo, .acordeon:hover{
+            background-color: #378708;
+        }
+        .panel{
+            padding: 0 18px;
+            display: none;
+            background-color: #333;
+            overflow: hidden;
+        }
+    </style>
+    </HEAD> 
+    <a href="index.html">
+        <center><img src="Game_Max.png" widht="70" height="70"></center></a>
+    <center> <div class="n"><p><b><font color="#378708" face="georgia" size="4"><marquee width="1270" scrollamount="10" bgcolor="black">Videojuegos de Lucha</marquee>    </font></b></p><center>
+    
+    <body>
+    <body bgcolor="#333">
+    <body link="#006400>">
+    <body vlink="#d268b4">
+    <body alink="#d2691E">
+    </body>
+    <font color="FFFFFF" size = "5" face="impact"> 
+    <script language="JavaScript">  var estado=true;  setTimeout("ver()",450);  function ver (){  estado=!estado;  if(estado==true)  texto1.style.visibility="visible";  else  texto1.style.visibility="hidden";  setTimeout("ver()",450);  }  
+    </script><p align="center" id="texto1"  style="visibility:visible"><font face="Arial, Helvetica,  sans-serif size="3">LUCHA</p></font>
+    <FONT COLOR="black" SIZE = "5" FACE="arial">
+    
+    <p><img src="Scorpion_fatality_2.gif" onmouseover="this.width=500;this.height=400;" onmouseout="this.width=200;this.height=150;" width="200" height="100" align="right"/>
+    <font color="FFFFFF" size = "5" face="Arial"> 
+    <p align="justify" class="leftmargin">
+        Los videojuegos de pelea o lucha son todos aquellos que incluyen combates directos entre personajes virtuales, son juegos basados en el combate cuerpo a cuerpo, usando los puños o armas, estas últimas engloban cualquier objeto inimaginable, que se presente que van desde recoger y utilizar objetos del entorno para ser lanzados como rocas, deposito, cajas, etc. Hasta armas cortas, cortantes y no cortantes como cuchillos, guadañas, espadas, machetes, hachas, hachuelas, bates de béisbol, látigos, llaves, etc.</p></font>
+
+        <p><img src="Street Fighter II.gif" onmouseover="this.width=500;this.height=400;" onmouseout="this.width=200;this.height=150;" width="200" height="100" align="center"/>
+
+    <font color="FFFFFF" size = "5" face="impact"> 
+        <script language="JavaScript">  var estado=true;  setTimeout("ver()",450);  function ver (){  estado=!estado;  if(estado==true)  texto1.style.visibility="visible";  else  texto1.style.visibility="hidden";  setTimeout("ver()",450);  }  
+        </script><p align="center" id="texto1"  style="visibility:visible"><font face="Arial, Helvetica,  sans-serif size="3">Subgeneros</p></font>
+        <FONT COLOR="black" SIZE = "5" FACE="arial">
+
+    <button class="acordeon">Uno contra uno</button>
+    <div class="panel">
+        <font color="white" size = "3" face="Arial"> 
+         <p align="justify" class="leftmargin">
+            El juego de lucha de uno contra uno o enfrentamiento individual varía mucho de un juego a otro, pero por lo general consiste en pelear contra otro luchador, manejado por el CPU o por otro videojugador, cuya finalidad es derrotarlo o evitar que derroten al nuestro, dándole golpes o cualquier otro tipo de ataque para debilitarlo y vencerlo, así como esquivar y contraatacar cualquier ataque recibido.
+            Por lo general suelen usar muchos botones, divididos en puños y patadas, la palanca o cruceta direccional es vital, ya que con ella se pueden hacer diversas combinaciones para que salgan los ataques. Este género se ha hecho muy famoso por las combinaciones complicadas de control, que incluye diagonales.
+            Los combates suelen ser en tres rondas (lo común) o en uno solo, hay una barra de energía que indica la salud que le queda a los combatientes para ser vencidos. En los juegos más recientes del género también hay diversos elementos en los escenarios que quitan salud.
+        </p></font>
+    </div>
+
+    <button class="acordeon">Batalla Campal</button>
+    <div class="panel">
+        <font color="white" size = "3" face="Arial"> 
+            <p align="justify" class="leftmargin">
+                El género de Lucha Free-For-All ("todos contra todos") o arena fighting que suele presentarse como un juego de batalla campal («battle royal» en inglés) donde el movimiento del jugador suele ser completamente libre en el escenario e incluye, habitualmente, una alta interacción con el escenario, diversos objetos utilizables repartidos sobre el escenario, ataque a distancia, etc. Es por eso por lo que también se los conoce como juegos de lucha sobre plataformas («platform fighting» en inglés), si además tenemos en cuenta que no tienen por qué ser juegos tridimensionales.</p>
+    </div>
+
+    <p><img src="Fortnite.gif" onmouseover="this.width=500;this.height=400;" onmouseout="this.width=200;this.height=150;" width="200" height="100" align="center"/>
+
+    <script>
+        var acc = document.getElementsByClassName("acordeon");
+        var i;
+
+        for (i = 0; i < acc.length; i++){
+            acc[i].addEventListener("click",function(){
+                this.classList.toggle("activo");
+                var panel =this.nextElementSibling;
+                if (panel.style.display === "block"){
+                    panel.style.display = "none";
+                }else{
+                    panel.style.display="block";
+                } 
+            });
+        }
+    </script>
+    </Body>
+    </HTML>
